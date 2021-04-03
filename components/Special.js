@@ -18,7 +18,7 @@ export default function Special(){
               </div>
               <div className="services-content">
                 <h3><a href="#">Logement garantie</a></h3>
-                <p>Quel que soit votre besoin d'habitation, nous trouverons le logement qui vous corresponds.</p>
+                <p>Quel que soit votre besoin d'habitation, nous trouverons le logement qui vous correspond.</p>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function Special(){
               </div>
               <div className="services-content">
                 <h3><a href="#">Le client est roi.</a></h3>
-                <p>Nous crétons tous nos clients avec le respect qu'ils méritent. Chaque client est important pour à nos yeux.</p>
+                <p>Nous crétons tous nos clients avec le respect qu'ils méritent. Chaque client est important à nos yeux.</p>
               </div>
             </div>
           </div>
@@ -39,8 +39,8 @@ export default function Special(){
                 <i className="lni-layers"></i>
               </div>
               <div className="services-content">
-                <h3><a href="#">Décoration interieure</a></h3>
-                <p>Nous avons une équipe vous accompagne après la vente pour votre installation.</p>
+                <h3><a href="#">Appartements meublés</a></h3>
+                <p>Pour vos séjours et vacances à Kinshasa, immoban243 met à votre disposition des appartements meublés.</p>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Special(){
               </div>
               <div className="services-content">
                 <h3><a href="#">Securité</a></h3>
-                <p>Vous assurrons à 100% de la fiabilité juridique des appartements que vendons.</p>
+                <p>Nous vous assurrons à 100% de la fiabilité des appartements que nous vendons.</p>
               </div>
             </div>
           </div>
@@ -61,8 +61,8 @@ export default function Special(){
                 <i className="lni-leaf"></i>
               </div>
               <div className="services-content">
-                <h3><a href="#">Vie convivial</a></h3>
-                <p>Lorem must explain to you how all this mistaolt dete denouncing pleasure and pralsing plan wasnad</p>
+                <h3><a href="#">Appartements simples</a></h3>
+                <p>Nous vous offrons aussi la liberté de faire votre choix selon vos goûts avec une orientation sûre.</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Special(){
               </div>
               <div className="services-content">
                 <h3><a href="#">Appartements de Luxe</a></h3>
-                <p>Lorem must explain to you how all this mistaolt dete denouncing pleasure and pralsing plan wasnad</p>
+                <p>Des somptueuses villas dans des endroits de rêve qui vous ferons réjouir de votre standard de vie social.</p>
               </div>
             </div>
           </div>

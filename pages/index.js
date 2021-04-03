@@ -40,7 +40,6 @@ function Home({ agents, houses, temoignages }) {
       </Head>
       <Header />
       <Intro />
-      <Search />
       <PopularHouses houses={houses} />
       <Agents agents={agents} />
       <Special />
@@ -53,9 +52,9 @@ function Home({ agents, houses, temoignages }) {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h4 className="intro-sub-heading">Pour des logements de qualité.</h4>
-                <h2 className="intro-title">Immoban243: un expert de confiances</h2>
-                <a href="https://rebrand.ly/estatebit-purchase-ud" rel="nofollow" className="btn btn-danger btn-lg">ACHETEZ MAINTENANT</a>
+                <h4 className="intro-sub-heading">Faites appel à nous pour changer votre condition d'habitation.</h4>
+                <h2 className="intro-title">Immoban243: Le meilleur est à venir</h2>
+                <a href="#" rel="nofollow" className="btn btn-danger btn-lg">ORGANISER UNE RENCONTRE</a>
               </div>
             </div>
           </div>
@@ -70,7 +69,7 @@ function Home({ agents, houses, temoignages }) {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <p>Copyright © 2021 <a rel="nofollow" href="https://google.com?Mbok'art">Mbok'art Concept</a> Tous droits réservés.</p>
+              <p>Copyright © 2021 <a rel="nofollow" href="https://mbokart-concept.net">Mbok'art Concept</a> Tous droits réservés.</p>
             </div>
           </div>
         </div>

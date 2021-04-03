@@ -28,13 +28,13 @@ export default function Footer(){
               <h3 className="footer-titel">Contact <span>Info</span></h3>
               <ul className="address">
                 <li>
-                  <a href="#"><i className="lni-map-marker"></i> Colonel Ebeya, Gombe, Kinshasa<br/></a>
+                  <a href="#"><i className="lni-map-marker"></i> N°3, Colonel Ebeya, Gombe, Kinshasa<br/></a>
                 </li>
                 <li>
-                  <a href="#"><i className="lni-phone-handset"></i> +243 820 000 000</a>
+                  <a href="#"><i className="lni-phone-handset"></i> +243 999 992 118</a>
                 </li>
                 <li>
-                  <a href="#"><i className="lni-envelope"></i> immo@gmail.com</a>
+                  <a href="#"><i className="lni-envelope"></i> blaisembombo@gmail.com</a>
                 </li>
               </ul>
             </div>

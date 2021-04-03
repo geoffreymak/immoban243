@@ -12,7 +12,7 @@ export default function TopBar() {
           </div>
           <div className="col-lg-5 col-md-4 col-xs-12">
             <div className="roof-social float-right">
-              <a className="facebook" href="#"><i className="lni-facebook-filled"></i></a>
+              <a className="facebook" href="https://m.facebook.com/baningbusinsess/" target="_blank"><i className="lni-facebook-filled"></i></a>
               <a className="twitter" href="#"><i className="lni-twitter-filled"></i></a>
               <a className="instagram" href="#"><i className="lni-instagram-filled"></i></a>
               <a className="linkedin" href="#"><i className="lni-linkedin-filled"></i></a>

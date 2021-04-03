@@ -28,7 +28,7 @@ export default function Latest({ houses }){
 	                  <div className="property-wrap">
 	                    <div className="property-item">
 	                      <div className="item-thumb">
-	                        <a className="hover-effect" href="property.html">
+	                        <a className="hover-effect" href="#">
 	                          <img className="img-fluid" src={urlFor(house.image).url()} alt="Maison" />
 	                        </a>
 	                        <div className="label-inner">
