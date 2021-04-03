@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header/Header';
 import Intro from '../components/Intro/Intro';
-import Agents from '../components/Agent/Agents';
+import Agent from '../components/Agent/Agent';
 import Special from '../components/Special'
 import PopularHouses from '../components/PopularHouses/PopularHouses'
 import Search from '../components/PopularHouses/Search'
@@ -12,8 +12,15 @@ import Counter from '../components/Counter'
 import Footer from '../components/Footer'
 import Temoignages from '../components/Temoignages'
 
-
+import imageUrlBuilder from '@sanity/image-url'
 import client from '../client'
+
+const builder = imageUrlBuilder(client)
+
+function urlFor(source) {
+  return builder.image(source)
+}
+
 
 function Home({ agents, houses, temoignages }) {
   return (
@@ -39,9 +46,35 @@ function Home({ agents, houses, temoignages }) {
         <script src="/js/main.js"></script>
       </Head>
       <Header />
-      <Intro />
+      <section id="intro" className="section-intro">
+        <div className="search-container">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h4 className="intro-sub-heading">Nous sommes une agence immobilière spécialisée dans la gestion, achat, vente, location et estimation des biens immobiliers.</h4>
+                <h2 className="intro-title">Immoban243: Le meilleur est à venir</h2>
+                <a href="#" rel="nofollow" className="btn btn-danger btn-lg">ORGANISER UNE RENCONTRE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <PopularHouses houses={houses} />
-      <Agents agents={agents} />
+      <section id="team" className="section-padding text-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="section-title-header text-center">
+                <h2 className="section-title">Nos Agents</h2>
+                <p>Des experts immobiliers avec des années d'experience dans le domaine.</p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            {agents && agents.map((agent) => (<Agent img={urlFor(agent.image).url()} name={agent.name} key={agent.name} />))}
+          </div>
+        </div>
+      </section>
       <Special />
       <Latest houses={houses} />
       <AboutUs />
