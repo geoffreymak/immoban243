@@ -9,6 +9,24 @@ export default {
 			type: 'string'
 		},
 		{
+			name: 'state',
+			title: "Type d'habitation",
+			type: 'string',
+			options: {
+				list: [
+					{ value: 'appartement', title: 'Appartement'},
+					{ value: 'maison', title: 'Maison'},
+					{ value: 'bureau', title: 'Bureau'},
+					{ value: 'villa', title: 'Villa'},
+					{ value: 'studio', title: 'Studio'},
+					{ value: 'terrain', title: 'Terrain'},
+					{ value: 'immeuble', title: 'Immeuble'},
+					{ value: 'concession', title: 'Concession'},
+					{ value: 'entrepot', title: 'Entrepôt'},
+				]
+			}
+		},
+		{
 			name: 'type',
 			title: 'Type de service',
 			type: 'string',
@@ -56,6 +74,16 @@ export default {
 			name: 'new',
 			title: 'Nouveau',
 			type: 'boolean'
-		}
+		},
+		{
+			name: 'clim',
+			title: 'Climatisation',
+			type: 'boolean'
+		},
+		{
+			name: 'pool',
+			title: 'Piscine',
+			type: 'boolean'
+		},
 	]
 }

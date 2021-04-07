@@ -7,18 +7,23 @@ function urlFor(source) {
   return builder.image(source)
 }
 
-export default function PopularHouses({ houses }){
+export default function PopularHouses({ houses, hideBrowseMore }){
 	return (
 		<section className="property section-padding">
       <div className="container">
       	<div className="row">
           <div className="col-12">
             <div className="section-title-header text-center">
-              <h2 className="section-title">Les plus populaires</h2>
+              <h2 className="section-title">{ hideBrowseMore ? "Resultats" : "Les plus populaires"}</h2>
               <p>Explorer notre catalogue des maisons de qualité.</p>
             </div>
           </div>
         </div>
+        {(!!hideBrowseMore && !!houses && !houses.length) && (
+        	<div style={{ display: 'flex', justifyContent: 'center' }}>
+        		<h4>Aucun résultat</h4>
+        	</div>
+        )}
         <div className="row">
         	{houses && houses.map((house) => (
         		<div key={house.description} className="col-lg-4 col-md-6 col-xs-12">
@@ -51,11 +56,11 @@ export default function PopularHouses({ houses }){
 	          </div>
         	))}
         </div>
-        <div className="col-12">
+        {!hideBrowseMore && <div className="col-12">
           <div className="text-center">
-            <a href="listing.html" className="btn btn-common">Tout voir</a>
+            <a href="/search" className="btn btn-common">Tout voir</a>
           </div> 
-        </div>
+        </div>}
       </div>
     </section>
 	)
