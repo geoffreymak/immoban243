@@ -1,6 +1,7 @@
 import imageUrlBuilder from "@sanity/image-url";
 import Skeleton from "react-loading-skeleton";
 import client from "../../client";
+import Link from "next/link";
 
 const builder = imageUrlBuilder(client);
 
@@ -105,9 +106,9 @@ export default function PopularHouses({
         {!hideBrowseMore && (
           <div className="col-12">
             <div className="text-center">
-              <a href="/search" className="btn btn-common">
-                Tout voir
-              </a>
+              <Link href="/search">
+                <a className="btn btn-common">Tout voir</a>
+              </Link>
             </div>
           </div>
         )}

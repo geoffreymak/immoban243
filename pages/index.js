@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
 import Intro from "../components/Intro/Intro";
@@ -61,14 +62,15 @@ function Home({ agents, houses, temoignages }) {
                 <h2 className="intro-title">
                   Immoban243: Le meilleur est à venir
                 </h2>
-                <a
-                  href="https://m.me/baningbusinsess"
-                  target="_blank"
-                  rel="nofollow"
-                  className="btn btn-danger btn-lg"
-                >
-                  ORGANISER UNE RENCONTRE
-                </a>
+                <Link href="/">
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    className="btn btn-danger btn-lg"
+                  >
+                    ORGANISER UNE RENCONTRE
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -155,9 +157,9 @@ function Home({ agents, houses, temoignages }) {
         <i className="lni-chevron-up"></i>
       </a>
 
-      <div id="preloader">
+      {/* <div id="preloader">
         <div className="loader" id="loader-1"></div>
-      </div>
+      </div> */}
     </div>
   );
 }

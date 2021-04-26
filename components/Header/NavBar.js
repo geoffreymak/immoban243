@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Router, { useRouter } from "next/router";
 
+import Link from "next/link";
 export default function NavBar() {
   const router = useRouter();
 
@@ -22,9 +23,11 @@ export default function NavBar() {
     >
       <div className="container">
         <div className="navbar-header">
-          <a className="navbar-brand" href="/">
-            <img src="/logo.png" alt="logo" />
-          </a>
+          <Link href="/">
+            <a className="navbar-brand">
+              <img src="/logo.png" alt="logo" />
+            </a>
+          </Link>
         </div>
 
         <div className="collapse navbar-collapse" id="main-navbar">
