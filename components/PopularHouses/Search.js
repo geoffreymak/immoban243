@@ -39,7 +39,7 @@ export default function Search() {
                     onChange={(e) => setType(e.target.value)}
                     className="classic"
                   >
-                    <option>Toutes les actions</option>
+                    <option value="">Toutes les actions</option>
                     <option value="alouer">Locations</option>
                     <option value="avendre">Ventes</option>
                   </select>
@@ -76,7 +76,7 @@ export default function Search() {
                     onChange={(e) => setTownship(e.target.value)}
                     className="classic"
                   >
-                    <option>Toutes les communes</option>
+                    <option value="">Toutes les communes</option>
                     <option value="gombe">Gombe</option>
                     <option value="n'djili">N'djili</option>
                     <option value="matete">Matete</option>
@@ -108,10 +108,10 @@ export default function Search() {
                 <label className="styled-select">
                   <select
                     value={town}
-                    onChange={(e) => setTownship(e.target.value)}
+                    onChange={(e) => setTown(e.target.value)}
                     className="classic"
                   >
-                    <option>Toutes les provinces</option>
+                    <option value="">Toutes les provinces</option>
                     <option value="kinshasa">Kinshasa</option>
                     <option value="kongo-central">Kongo-central</option>
                     <option value="mai-ndombe">Mai-ndombe</option>
@@ -130,7 +130,7 @@ export default function Search() {
                     onChange={(e) => setChs(e.target.value)}
                     className="classic"
                   >
-                    <option>Chambres</option>
+                    <option value="">Chambres</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
