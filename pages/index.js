@@ -12,7 +12,6 @@ import AboutUs from "../components/AboutUs";
 import Counter from "../components/Counter";
 import Footer from "../components/Footer";
 import Temoignages from "../components/Temoignages";
-
 import imageUrlBuilder from "@sanity/image-url";
 import client from "../client";
 
